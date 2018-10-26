@@ -1,0 +1,7 @@
+<classpath>
+  <container id="SpringMvc_Test!org.eclipse.jst.j2ee.internal.web.container">
+    <entry id="E:/JAVA/workspace-5/SpringMvc_Test/WebContent/WEB-INF/lib/spring-webmvc-4.2.5.RELEASE.jar">
+      <source-attachment-path>/SpringMvc_Test/WebContent/WEB-INF/lib/spring-webmvc-4.2.5.RELEASE.jar</source-attachment-path>
+    </entry>
+  </container>
+</classpath>

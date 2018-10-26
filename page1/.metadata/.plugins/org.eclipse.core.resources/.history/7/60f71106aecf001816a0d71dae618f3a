@@ -1,0 +1,38 @@
+package 作业;
+
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Scanner;
+import java.util.Set;
+import java.util.TreeSet;
+import java.lang.*;
+public class T5 {
+	public static void main(String[] args) {
+		int sum=0,each;
+		Scanner sc = new Scanner(System.in);
+		String s = sc.nextLine();
+		HashMap<String,Integer> hm = new HashMap<String,Integer>();
+		hm.put("张三", 98);
+		hm.put("李四", 87);
+		hm.put("王五", 88);
+		hm.put("程六", 91);
+		System.out.println(s+"的成绩是:"+hm.get(s));
+		TreeSet<Integer> ts = new TreeSet<Integer>();
+		Set<Map.Entry<String,Integer>> set = hm.entrySet();
+		Iterator<Map.Entry<String,Integer>> it = set.iterator();
+		while(it.hasNext())
+		{
+			each = it.next().getValue();
+			ts.add(each);
+			sum+=each;
+		}
+		Iterator<Integer> i = ts.iterator();
+		while(i.hasNext())
+			System.out.println(i.next());
+		System.out.println("最大值为:"+Collections.max(ts));
+		System.out.println("最小值为:"+Collections.min(ts));
+		System.out.println("平均值为:"+sum/ts.size());
+	}
+}

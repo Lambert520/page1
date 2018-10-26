@@ -1,0 +1,19 @@
+package ื๗าต;
+
+import java.util.Scanner;
+
+public class T1 {
+	public static void main(String[] args) {
+		StringBuffer sb = new StringBuffer();
+		String s = "AbCdEf";
+		char[] c = s.toCharArray();
+		for(int i=0;i<c.length;i++)
+		{
+			if(c[i]>=97)
+				sb.append((c[i]+"").toUpperCase());
+			else
+				sb.append((c[i]+"").toLowerCase());
+		}
+		System.out.println(sb.toString());
+	}
+}
